@@ -35,22 +35,6 @@ publication = ">=0.0.3"
 typeguard = ">=2.13.3,<4.3.0"
 
 [[package]]
-name = "aws-cdk-asset-kubectl-v20"
-version = "2.1.3"
-description = "A Lambda Layer that contains kubectl v1.20"
-optional = false
-python-versions = "~=3.8"
-files = [
-    {file = "aws_cdk.asset_kubectl_v20-2.1.3-py3-none-any.whl", hash = "sha256:d5612e5bd03c215a28ce53193b1144ecf4e93b3b6779563c046a8a74d83a3979"},
-    {file = "aws_cdk_asset_kubectl_v20-2.1.3.tar.gz", hash = "sha256:237cd8530d9e8be0bbc7159af927dbb6b7f91bf3f4099c8ef4d9a213b34264be"},
-]
-
-[package.dependencies]
-jsii = ">=1.103.1,<2.0.0"
-publication = ">=0.0.3"
-typeguard = ">=2.13.3,<5.0.0"
-
-[[package]]
 name = "aws-cdk-asset-node-proxy-agent-v6"
 version = "2.1.0"
 description = "@aws-cdk/asset-node-proxy-agent-v6"
@@ -84,36 +68,35 @@ typeguard = ">=2.13.3,<4.3.0"
 
 [[package]]
 name = "aws-cdk-lambda-layer-kubectl-v31"
-version = "2.0.2"
+version = "2.0.3"
 description = "A Lambda Layer that contains kubectl v1.31"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "aws_cdk.lambda_layer_kubectl_v31-2.0.2-py3-none-any.whl", hash = "sha256:23fb4bcc02859472ba36d6cf39368fba96b74ee74967a569f703b423fd9d4985"},
-    {file = "aws_cdk_lambda_layer_kubectl_v31-2.0.2.tar.gz", hash = "sha256:4b525670a80957d9d14cad9f8cb32f1f3b3587734b143e2ed650388b657b5b31"},
+    {file = "aws_cdk.lambda_layer_kubectl_v31-2.0.3-py3-none-any.whl", hash = "sha256:de9f0df8114f0bdb1172dc0a22df6fe5cd6a29b1099185118154416313a751cb"},
+    {file = "aws_cdk_lambda_layer_kubectl_v31-2.0.3.tar.gz", hash = "sha256:0dc59ea0e03b914569d5fa250cee6dd7746ed5c3b57629f7db77fa8cd5d305cd"},
 ]
 
 [package.dependencies]
 aws-cdk-lib = ">=2.94.0,<3.0.0"
 constructs = ">=10.0.5,<11.0.0"
-jsii = ">=1.103.1,<2.0.0"
+jsii = ">=1.106.0,<2.0.0"
 publication = ">=0.0.3"
-typeguard = ">=2.13.3,<5.0.0"
+typeguard = ">=2.13.3,<4.3.0"
 
 [[package]]
 name = "aws-cdk-lib"
-version = "2.178.2"
+version = "2.180.0"
 description = "Version 2 of the AWS Cloud Development Kit library"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "aws_cdk_lib-2.178.2-py3-none-any.whl", hash = "sha256:624383e57fe2b32f7d0fc098b78b4cd21d19ae3af3f24b01f32ec4795baaee25"},
-    {file = "aws_cdk_lib-2.178.2.tar.gz", hash = "sha256:c00757885b74023350bb34f388f6447155e802ecf827e595bda917098a4925fe"},
+    {file = "aws_cdk_lib-2.180.0-py3-none-any.whl", hash = "sha256:5700a84dc4c2c6d323e596119fb4100e66aef6265a4d984bbe2e9341174d048b"},
+    {file = "aws_cdk_lib-2.180.0.tar.gz", hash = "sha256:28ba2c75bd55886eb5e686c58be656c9ab29b895f774f9129eaa3255ffcd6b42"},
 ]
 
 [package.dependencies]
 "aws-cdk.asset-awscli-v1" = ">=2.2.208,<3.0.0"
-"aws-cdk.asset-kubectl-v20" = ">=2.1.3,<3.0.0"
 "aws-cdk.asset-node-proxy-agent-v6" = ">=2.1.0,<3.0.0"
 "aws-cdk.cloud-assembly-schema" = ">=39.2.0,<40.0.0"
 constructs = ">=10.0.0,<11.0.0"
@@ -123,13 +106,13 @@ typeguard = ">=2.13.3,<4.3.0"
 
 [[package]]
 name = "boto3-stubs"
-version = "1.36.21"
-description = "Type annotations for boto3 1.36.21 generated with mypy-boto3-builder 8.9.1"
+version = "1.36.26"
+description = "Type annotations for boto3 1.36.26 generated with mypy-boto3-builder 8.9.2"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "boto3_stubs-1.36.21-py3-none-any.whl", hash = "sha256:37803a04d55dc14e99e1aabdbdfc1612d92d55f1fdf2b8efc3f7ccc5b5514a09"},
-    {file = "boto3_stubs-1.36.21.tar.gz", hash = "sha256:0cb41bcc60490c8f2f6916d246839b0017184ffff31f65fc2e9205beceaf53ba"},
+    {file = "boto3_stubs-1.36.26-py3-none-any.whl", hash = "sha256:ebeb4537c2cebf591ed003b0004db2ec8400718f404ac19ce070844b009633e5"},
+    {file = "boto3_stubs-1.36.26.tar.gz", hash = "sha256:4d9cfbe7c6b55dac5d4509a2e44df1263be9a684c7723d297baffb5f579098a1"},
 ]
 
 [package.dependencies]
@@ -187,7 +170,7 @@ bedrock-data-automation-runtime = ["mypy-boto3-bedrock-data-automation-runtime (
 bedrock-runtime = ["mypy-boto3-bedrock-runtime (>=1.36.0,<1.37.0)"]
 billing = ["mypy-boto3-billing (>=1.36.0,<1.37.0)"]
 billingconductor = ["mypy-boto3-billingconductor (>=1.36.0,<1.37.0)"]
-boto3 = ["boto3 (==1.36.21)"]
+boto3 = ["boto3 (==1.36.26)"]
 braket = ["mypy-boto3-braket (>=1.36.0,<1.37.0)"]
 budgets = ["mypy-boto3-budgets (>=1.36.0,<1.37.0)"]
 ce = ["mypy-boto3-ce (>=1.36.0,<1.37.0)"]
@@ -610,18 +593,18 @@ typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "cdk8s"
-version = "2.69.40"
+version = "2.69.42"
 description = "This is the core library of Cloud Development Kit (CDK) for Kubernetes (cdk8s). cdk8s apps synthesize into standard Kubernetes manifests which can be applied to any Kubernetes cluster."
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "cdk8s-2.69.40-py3-none-any.whl", hash = "sha256:3902f8e3c1abbdea015aea0a9bd85dcf13de3d2f61ce344da7afff1b419821f2"},
-    {file = "cdk8s-2.69.40.tar.gz", hash = "sha256:944679b5d3019653ee82fa543bd29ea0f210f7669a6c0eb6603c7691ecb47007"},
+    {file = "cdk8s-2.69.42-py3-none-any.whl", hash = "sha256:7fd5c5a51719e99dcec8f167d8fdeae00083b139230340b2e14a8df712786420"},
+    {file = "cdk8s-2.69.42.tar.gz", hash = "sha256:6b24f9bc90489268863e2632cf44770eadc149f441d8f215bb2e55fd3ddfe7a5"},
 ]
 
 [package.dependencies]
 constructs = ">=10.0.0,<11.0.0"
-jsii = ">=1.106.0,<2.0.0"
+jsii = ">=1.107.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<4.3.0"
 
@@ -694,17 +677,17 @@ files = [
 
 [[package]]
 name = "jsii"
-version = "1.106.0"
+version = "1.107.0"
 description = "Python client for jsii runtime"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "jsii-1.106.0-py3-none-any.whl", hash = "sha256:5a44d7c3a5a326fa3d9befdb3770b380057e0a61e3804e7c4907f70d76afaaa2"},
-    {file = "jsii-1.106.0.tar.gz", hash = "sha256:c79c47899f53a7c3c4b20f80d3cd306628fe9ed1852eee970324c71eba1d974e"},
+    {file = "jsii-1.107.0-py3-none-any.whl", hash = "sha256:bd59b5aa5d27cd7979113ae8e4623e5386bf78adf81de375e29e915f502a1603"},
+    {file = "jsii-1.107.0.tar.gz", hash = "sha256:039ea4b0687ef2eafdded2df1184fef5e926c86316bd4851e3d32fab084b780b"},
 ]
 
 [package.dependencies]
-attrs = ">=21.2,<25.0"
+attrs = ">=21.2,<26.0"
 cattrs = ">=1.8,<24.2"
 importlib-resources = ">=5.2.0"
 publication = ">=0.0.3"
@@ -917,13 +900,13 @@ files = [
 
 [[package]]
 name = "syrupy"
-version = "4.8.1"
+version = "4.8.2"
 description = "Pytest Snapshot Test Utility"
 optional = false
 python-versions = ">=3.8.1"
 files = [
-    {file = "syrupy-4.8.1-py3-none-any.whl", hash = "sha256:274f97cbaf44175f5e478a2f3a53559d31f41c66c6bf28131695f94ac893ea00"},
-    {file = "syrupy-4.8.1.tar.gz", hash = "sha256:8da8c0311e6d92de0b15767768c6ab98982b7b4a4c67083c08fbac3fbad4d44c"},
+    {file = "syrupy-4.8.2-py3-none-any.whl", hash = "sha256:1fee874d422cfb1342aa746a65936d6500178beeb6fe26cb3a970c626fbe6058"},
+    {file = "syrupy-4.8.2.tar.gz", hash = "sha256:8418748be9cc050bf156d2e6c551dbc1768d591d36652e945a52ab3b0303a899"},
 ]
 
 [package.dependencies]
@@ -991,4 +974,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10, <3.13"
-content-hash = "a96125382eb49ef09483341ccee05ccd8f070ff5cab6cfc67ea47adffbaa12f8"
+content-hash = "5d0b9dfc102cf33ee12956cbd7c7db7a727842165bd7a0b6f3e6c481d72605c6"
