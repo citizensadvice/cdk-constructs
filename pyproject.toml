@@ -8,14 +8,14 @@ homepage = "https://github.com/citizensadvice/ca-cdk-constructs"
 [tool.poetry.dependencies]
 # When this range changes, make sure that the versions in .github/workflows/test.yaml matches this
 python = ">=3.10, <3.13"
-aws-cdk-lib = "~=2.178"
-cdk8s = "~2.69.40"
+aws-cdk-lib = "~=2.181"
+cdk8s = "~2.69.46"
 constructs = "~=10.4"
 cdk_remote_stack = "~=2.1"
 aws-cdk-lambda-layer-kubectl-v32 = "^2.0.3"
 
 [tool.poetry.group.dev.dependencies]
-boto3-stubs = {version = "1.36.21", extras = ["rds", "secretsmanager"]}
+boto3-stubs = {version = "1.37.2", extras = ["rds", "secretsmanager"]}
 pytest = "~=8.3"
 syrupy = "~=4.8"
 ruff = "^0.9.7"
